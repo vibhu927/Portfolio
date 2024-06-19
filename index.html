@@ -21,34 +21,34 @@
       </div>
       <div class="elem">
         <nav id="navbar">
-          <a href="#" id="home">Home</a>
-          <a href="#work">My Work</a>
-          <a href="#whatIDo">what I Do</a>
-          <a href="#about">About Me</a>
-          <a href="#contact">Contact</a>
-          <a href="#social">Social</a>
+          <a class="bg-indigo-600" href="#" id="home">Home</a>
+          <a class="hover:bg-indigo-600" href="#work">My Work</a>
+          <a class="hover:bg-indigo-600" href="#whatIDo">what I Do</a>
+          <a class="hover:bg-indigo-600" href="#about">About Me</a>
+          <a class="hover:bg-indigo-600" href="#contact">Contact</a>
+          <a class="hover:bg-indigo-600" href="#social">Social</a>
         </nav>
       </div>
     </div>
-    <div class="container">
+    <div class="container mx-auto">
       <div class="image">
-        <img src="Assets/Img/I am.png" alt="background image" />
+        <!-- <img src="Assets/Img/I am.png" alt="background image" /> -->
       </div>
     </div>
     <br /><br />
     <div class="my-work" id="work">
-      <fieldset id="border">
+      <fieldset class="text-indigo-600" id="border">
         <legend><h1 id="work-head">My Work</h1></legend>
         <div class="work">
-          <div class="w1">
+          <div class="w1 bg-indigo-600">
             <img src="Assets/Img/client.png" alt="" style="width: 100px; height: 100px;">
             <h3 style="color: white">10 Happy Clients</h3>
           </div>
-          <div class="w2">
+          <div class="w2 bg-indigo-600">
             <img src="Assets/Img/project.png" alt="">
             <h3 style="color: white">20 Projects Submitted</h3>
           </div>
-          <div class="w3">
+          <div class="w3 bg-indigo-600">
             <img src="Assets/Img/project2.png" alt="">
             <h3 style="color: white">3 Ongoing Projects</h3>
           </div>
@@ -56,9 +56,9 @@
       </fieldset>
     </div>
     <br /><br />
-    <div class="container2" id="whatIDo">
-      <h2>What I Do</h2>
-      <div class="i-do">
+    <div class="container2 bg-indigo-600" id="whatIDo">
+      <h2 class="text-white">What I Do</h2>
+      <div class="i-do bg-indigo-600">
         <div class="do1">
           <img src="Assets/Img/icons8-web-developer-96.png" alt="" />
           <h3>Web Designing</h3>
@@ -77,10 +77,10 @@
       <h2 style="color: #3e3e3e; font-size: 60px; text-align: center; margin:30px;">About Me</h2>
 
       <div class="about">
-        <div class="pic">
+        <!-- <div class="pic">
           <img src="Assets/Img/my pic.jpg" alt="my-pic"/>
-        </div>
-        <div class="about-text">
+        </div> -->
+        <div class="about-text m-10">
           <h2>Vaibhav Narula</h2>
           <h5>( Web Designer and UI/UX Designer )</h5>
           <h4>
@@ -98,13 +98,13 @@
             necessitatibus dignissimos totam, labore nemo.
           </h4>
           <div class="cv">
-            <button id="btn" onclick="downloadResume()">Download CV</button>
+            <button class="bg-indigo-600 text-white" id="btn" onclick="downloadResume()">Download CV</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="container4" id="contact">
-           <h2 style="font-size: 60px; color: #3e3e3e; margin-top: 30px;">Contact Me</h2>
+    <div class="container4 bg-indigo-600" id="contact">
+           <h2 style="font-size: 60px; color: white; margin-top: 30px;">Contact Me</h2>
            <div class="about">
             <div class="contact">
                   <img src="Assets/Img/call.png" alt="">
@@ -141,6 +141,7 @@
         <h2>Thank You For Visiting.</h2>
     </div>
   </body>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     function downloadResume() {
             // Use forward slashes or double backslashes for file paths
