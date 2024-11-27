@@ -1,163 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Assets/my.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" href="Assets/Img/apple-touch-icon.png">
     <link
-      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Poppins&family=Rubik:wght@900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Poppins:wght@400;600;800&family=Rubik:wght@900&display=swap"
       rel="stylesheet"
     />
     <title>Portfolio</title>
+    <style>
+      .floating {
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0px); }
+      }
+      .bounce {
+        animation: bounce 2s infinite;
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+        40% { transform: translateY(-20px); }
+        60% { transform: translateY(-10px); }
+      }
+    </style>
   </head>
-  <body>
-    <div class="wrapper">
-      <div class="logo">
-        <img src="Assets/Img/V.n..png" alt="logo"/>
-      </div>
-      <div class="elem">
-        <nav id="navbar">
-          <a class="bg-indigo-600" href="#" id="home">Home</a>
-          <a class="hover:bg-indigo-600" href="#work">My Work</a>
-          <a class="hover:bg-indigo-600" href="#whatIDo">what I Do</a>
-          <a class="hover:bg-indigo-600" href="#about">About Me</a>
-          <a class="hover:bg-indigo-600" href="#contact">Contact</a>
-          <a class="hover:bg-indigo-600" href="#social">Social</a>
+  <body class="bg-slate-900 font-['Poppins'] text-gray-100">
+    <!-- Navbar -->
+    <div class="fixed top-0 left-0 right-0 z-50 bg-slate-800/80 backdrop-blur-md">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="logo w-12 h-12">
+          <img src="Assets/Img/V.n..png" alt="logo" class="w-full h-full object-contain"/>
+        </div>
+        <nav class="space-x-6">
+          <a href="#" class="text-gray-300 hover:text-white hover:scale-110 transition-all duration-300">Home</a>
+          <a href="#work" class="text-gray-300 hover:text-white hover:scale-110 transition-all duration-300">My Work</a>
+          <a href="#whatIDo" class="text-gray-300 hover:text-white hover:scale-110 transition-all duration-300">What I Do</a>
+          <a href="#about" class="text-gray-300 hover:text-white hover:scale-110 transition-all duration-300">About Me</a>
+          <a href="#contact" class="text-gray-300 hover:text-white hover:scale-110 transition-all duration-300">Contact</a>
+          <a href="#social" class="text-gray-300 hover:text-white hover:scale-110 transition-all duration-300">Social</a>
         </nav>
       </div>
     </div>
-    <div class="container mx-auto">
-      <div class="image">
-        <!-- <img src="Assets/Img/I am.png" alt="background image" /> -->
-      </div>
-    </div>
-    <br /><br />
-    <div class="my-work" id="work">
-      <fieldset class="text-indigo-600" id="border">
-        <legend><h1 id="work-head">My Work</h1></legend>
-        <div class="work">
-          <div class="w1 bg-indigo-600">
-            <img src="Assets/Img/client.png" alt="" style="width: 100px; height: 100px;">
-            <h3 style="color: white">10 Happy Clients</h3>
-          </div>
-          <div class="w2 bg-indigo-600">
-            <img src="Assets/Img/project.png" alt="">
-            <h3 style="color: white">20 Projects Submitted</h3>
-          </div>
-          <div class="w3 bg-indigo-600">
-            <img src="Assets/Img/project2.png" alt="">
-            <h3 style="color: white">3 Ongoing Projects</h3>
-          </div>
-        </div>
-      </fieldset>
-    </div>
-    <br /><br />
-    <div class="container2 bg-indigo-600" id="whatIDo">
-      <h2 class="text-white">What I Do</h2>
-      <div class="i-do bg-indigo-600">
-        <div class="do1">
-          <img src="Assets/Img/icons8-web-developer-96.png" alt="" />
-          <h3>Web Designing</h3>
-        </div>
-        <div class="do-image">
-          <img src="Assets/Img/arrow.png" alt="arrow" />
-        </div>
-        <div class="do2">
-          <img src="Assets/Img/uiux.png" alt="" />
-          <h3>UI/UX Designing</h3>
-        </div>
-      </div>
-    </div>
-    <br /><br />
-    <div class="container3" id="about">
-      <h2 style="color: #3e3e3e; font-size: 60px; text-align: center; margin:30px;">About Me</h2>
 
-      <div class="about">
-        <!-- <div class="pic">
-          <img src="Assets/Img/my pic.jpg" alt="my-pic"/>
-        </div> -->
-        <div class="about-text m-10">
-          <h2>Vaibhav Narula</h2>
-          <h5>( Web Designer and UI/UX Designer )</h5>
-          <h4>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae eum,
-            delectus ipsa laborum quae dolorem eligendi. Deleniti provident
-            ipsam enim laborum dicta voluptate commodi error quisquam voluptates
-            odio, blanditiis omnis voluptatem delectus distinctio maiores ex.
-            Veniam rerum cupiditate id illum exercitationem unde officia alias
-            non quibusdam hic. Voluptatibus quasi, ipsa, dignissimos voluptatem
-            dolores atque qui possimus necessitatibus facilis veniam incidunt
-            distinctio vero, facere nam eum veritatis ab. Dicta nihil modi
-            debitis, praesentium inventore quo. Vitae itaque eveniet praesentium
-            autem adipisci tempora ipsa soluta vero optio quibusdam eos alias
-            excepturi voluptatem ratione, modi ducimus fugiat eaque
-            necessitatibus dignissimos totam, labore nemo.
-          </h4>
-          <div class="cv">
-            <button class="bg-indigo-600 text-white" id="btn" onclick="downloadResume()">Download CV</button>
+    <!-- Hero Section -->
+    <div class="min-h-screen flex flex-col justify-center items-center pt-16">
+      <h1 class="p-3 text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-center floating mb-8">
+        Full Stack Engineer
+      </h1>
+      <p class="text-xl text-gray-400 mb-12 text-center">Crafting digital experiences with code and creativity</p>
+      <a href="#work" class="bounce">
+        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="container p-2 mx-auto rounded-xl bg-slate-800"></div>
+    <!-- My Work Section -->
+    <div id="work" class="container mx-auto px-4 py-20">
+      <h2 class="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">My Work</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-slate-800 p-8 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20">
+          <img src="Assets/Img/client.png" alt="" class="w-20 h-20 mx-auto mb-4">
+          <h3 class="text-2xl font-semibold text-center">10 Happy Clients</h3>
+        </div>
+        <div class="bg-slate-800 p-8 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20">
+          <img src="Assets/Img/project.png" alt="" class="w-20 h-20 mx-auto mb-4">
+          <h3 class="text-2xl font-semibold text-center">20 Projects Submitted</h3>
+        </div>
+        <div class="bg-slate-800 p-8 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20">
+          <img src="Assets/Img/project2.png" alt="" class="w-20 h-20 mx-auto mb-4">
+          <h3 class="text-2xl font-semibold text-center">3 Ongoing Projects</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- What I Do Section -->
+    <div id="whatIDo" class="bg-slate-800 py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">What I Do</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="p-8 rounded-xl hover:scale-105 transition-all duration-300 text-center bg-slate-900">
+            <img src="Assets/Img/icons8-web-developer-96.png" alt="" class="w-24 h-24 mx-auto mb-4">
+            <h3 class="text-2xl font-semibold">Web Development</h3>
+          </div>
+          <div class="hidden md:block text-center">
+            <img src="Assets/Img/arrow.png" alt="arrow" class="w-24 h-24 mx-auto">
+          </div>
+          <div class="p-8 rounded-xl hover:scale-105 transition-all duration-300 text-center bg-slate-900">
+            <img src="Assets/Img/uiux.png" alt="" class="w-24 h-24 mx-auto mb-4">
+            <h3 class="text-2xl font-semibold">UI/UX Designing</h3>
           </div>
         </div>
       </div>
     </div>
-    <div class="container4 bg-indigo-600" id="contact">
-           <h2 style="font-size: 60px; color: white; margin-top: 30px;">Contact Me</h2>
-           <div class="about">
-            <div class="contact">
-                  <img src="Assets/Img/call.png" alt="">
-                  <h4>+91  7206142042</h4>
-            </div>
-            <div class="contact">
-                 <img src="Assets/Img/mail.png" alt="">
-                 <h4>vaibhavanarula927@gmail.com</h4>
-            </div>
-            <div class="contact">
-                 <img src="Assets/Img/add.png" alt="">
-                 <h4>#84, Krishna Nagar, Near I.T.I., Yamuna Nagar.</h4>
-            </div>
-           </div>
-    </div><br><br>
-    <div class="container5" id="social">
-        <h2 style="font-size: 60px; color: #3e3e3e;">Social Media</h2>
-        <div class="handles">
-        <div class="social">
-             <img src="Assets/Img/insta.png" alt="">
-             <h4>_vibhu.11_</h4>
-        </div>
-        <div class="social">
-              <img src="Assets/Img/snap.png" alt="">
-              <h4>hey_vibhu</h4>
-        </div>
-        <div class="social">
-            <img src="Assets/Img/linkedin.png" alt="">
-            <h4>Vaibhav Narula</h4>
-        </div>
+
+    <!-- About Section -->
+    <div id="about" class="container mx-auto px-4 py-20">
+      <h2 class="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">About Me</h2>
+      <div class="bg-slate-800 p-8 rounded-xl max-w-3xl mx-auto hover:scale-105 transition-all duration-300">
+        <h3 class="text-3xl font-bold mb-2">Vaibhav Narula</h3>
+        <h4 class="text-xl text-gray-400 mb-6">Full Stack Engineer</h4>
+        <p class="text-gray-300 mb-8">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae eum,
+          delectus ipsa laborum quae dolorem eligendi. Deleniti provident
+          ipsam enim laborum dicta voluptate commodi error quisquam voluptates.
+        </p>
+        <button onclick="downloadResume()" class="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-8 py-3 rounded-full hover:scale-105 transition-all duration-300">
+          Download CV
+        </button>
+      </div>
     </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="bg-slate-800 py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Contact Me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto">
+          <div class="p-6 me-5 bg-slate-700 rounded-xl hover:scale-105 transition-all duration-300 text-center">
+            <img src="Assets/Img/call.png" alt="" class="w-16 h-16 mx-auto mb-4">
+            <p class="text-gray-300">+91 7206142042</p>
+          </div>
+          <div class="p-6 bg-slate-700 rounded-xl hover:scale-105 transition-all duration-300 text-center">
+            <img src="Assets/Img/mail.png" alt="" class="w-16 h-16 mx-auto mb-4">
+            <p class="text-gray-300">vaibhavanarula927@gmail.com</p>
+          </div>
+          <div class="p-6 ms-5 bg-slate-700 rounded-xl hover:scale-105 transition-all duration-300 text-center">
+            <img src="Assets/Img/add.png" alt="" class="w-16 h-16 mx-auto mb-4">
+            <p class="text-gray-300">#84, Krishna Nagar, Near I.T.I., Yamuna Nagar.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="thanks">
-        <h2>Thank You For Visiting.</h2>
+
+    <!-- Social Media Section -->
+    <div id="social" class="container mx-auto px-4 py-20">
+      <h2 class="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Social Media</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <a href="https://www.instagram.com" class="p-6 bg-slate-800 rounded-xl hover:scale-105 transition-all duration-300 text-center group">
+          <img src="Assets/Img/insta.png" alt="" class="w-16 h-16 mx-auto mb-4 group-hover:rotate-12 transition-transform">
+          <p class="text-gray-300">_narula.vaibhav_</p>
+        </a>
+        <a href="#" class="p-6 bg-slate-800 rounded-xl hover:scale-105 transition-all duration-300 text-center group">
+          <img src="Assets/Img/snap.png" alt="" class="w-16 h-16 mx-auto mb-4 group-hover:rotate-12 transition-transform">
+          <p class="text-gray-300">hey_vibhu</p>
+        </a>
+        <a href="https://www.linkedin.com/vaibavnarula47" class="p-6 bg-slate-800 rounded-xl hover:scale-105 transition-all duration-300 text-center group">
+          <img src="Assets/Img/linkedin.png" alt="" class="w-16 h-16 mx-auto mb-4 group-hover:rotate-12 transition-transform">
+          <p class="text-gray-300">Vaibhav Narula</p>
+        </a>
+      </div>
     </div>
+
+    <!-- Footer -->
+    <div class="bg-slate-800 py-8">
+      <h2 class="text-2xl text-center text-gray-400">Thank You For Visiting.</h2>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function downloadResume() {
+        var resumeUrl = 'Assets/Pdf/Resume.pdf';
+        var link = document.createElement('a');
+        link.href = resumeUrl;
+        link.download = "Vaibhav's Resume";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
   </body>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    function downloadResume() {
-            // Use forward slashes or double backslashes for file paths
-            var resumeUrl = 'Assets/Pdf/Resume.pdf';
-
-            var link = document.createElement('a');
-            link.href = resumeUrl;
-            link.download = 'Vaibhav\'s Resume';
-            document.body.appendChild(link)
-;
-            link.click();
-            document.body.removeChild(link)
-;
-        }
-
-        // Attach the function to the button click event
-        document.getElementById('downloadResume').addEventListener('click', downloadResume);
-  </script>
 </html>
